@@ -1,24 +1,33 @@
+:root {
+    --hauptfarbe: #111111; /* Blau */
+    --nebenfarbe: #333333; /* Rot */
+    --font: #FFFFFF;
+    --buttun: #FFD700;
+}
+
+
 /* reset some default styles */
 body, h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    color: inherit;
+    color: var(--font);
     font-family: Arial, sans-serif;
+    background-color: var(--nebenfarbe);
 }
 
 /* basic styles */
 body {
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: var(--hauptfarbe);
     color: #333;
     padding: 20px;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: var(--buttun);
+    color: var(--font);
     padding: 10px 0;
     text-align: center;
 }
@@ -39,12 +48,12 @@ nav ul li {
 nav ul li a {
     color: #fff;
     padding: 5px 10px;
-    background: #444;
+    background: var(--nebenfarbe);
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    background: #555;
+    background: var(--buttun);
 }
 
 main {
@@ -52,7 +61,7 @@ main {
 }
 
 section {
-    background: #fff;
+    background: var(--nebenfarbe);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -62,8 +71,8 @@ section {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
+    background: var(--hauptfarbe);
+    color: var(--font);
     margin-top: 20px;
     border-radius: 5px;
 }
